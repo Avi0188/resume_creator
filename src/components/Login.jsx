@@ -38,7 +38,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/api/auth/login", { email, password });
+      const response = await axios.post("https://resume-backend-xs9g.onrender.com/auth/login", { email, password });
       if (response.status === 200) {
         const { token, userId, username } = response.data;
         login({ token, userId, username });

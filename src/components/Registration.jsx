@@ -23,7 +23,7 @@ const Registration = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/api/auth/register", {
+      const response = await axios.post("https://resume-backend-xs9g.onrender.com/auth/register", {
         username,
         email,
         password
